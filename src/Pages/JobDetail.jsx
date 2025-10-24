@@ -14,7 +14,7 @@ export default function JobDetail() {
         <>
             <h1>Sono pagina dettaglio dei job, Provami Nicole</h1>
             {selectedJob && 
-            <div>
+            <div className="job-details-scroll">
                 <h2>{selectedJob.title}</h2>
                 <h3>Company: {selectedJob.company_name}</h3>
                 <div  dangerouslySetInnerHTML={{ __html: selectedJob.description }}></div>

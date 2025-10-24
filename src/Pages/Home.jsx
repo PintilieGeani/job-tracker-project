@@ -1,16 +1,21 @@
+import { useEffect } from "react"
 import { useJobContext } from "../context/JobContext"
 
 export default function Home() {
 
-    const {prova} = useJobContext()
+    const {setShowDetails} = useJobContext()
 
-    console.log(prova)
+    useEffect(() => {
+        setShowDetails(false)
+    },[])
+
+    
 
     return (
         <>
         <h1>Sono la home page</h1>
         <h3>
-            Niki, clicca su Lavori e segui le istruzioni 🤍.
+            Benvenuti nel mio JOB TRACKER 🤍.
         </h3>
         </>
     )

@@ -19,6 +19,10 @@ export default function JobList() {
         }
     }
 
+    useEffect(() => {
+        setShowDetails(false)
+    },[])
+
     const handleOpenDetail = (job) => {
         setSelectedJob(job)
         setShowDetails(true)
