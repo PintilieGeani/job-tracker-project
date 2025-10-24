@@ -1,0 +1,99 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* DEBUG */
+div,
+nav {
+  border: 1px solid black;
+}
+
+header {
+  background-color: red;
+  width: 150px;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer {
+  background-color: aqua;
+  height: 100px;
+}
+
+.cards-container {
+  background-color: blue;
+  overflow: auto;
+  padding: 10px;
+  flex: 1;
+    margin: 20px 0px;
+}
+
+.container {
+  background-color: antiquewhite;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.job-list {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: lightcoral;
+}
+
+.job-detail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: lightcyan;
+}
+
+.job-list-reduct {
+  width: 40%;
+  height: 100%;
+  background-color: lightcoral;
+}
+
+.job-detail-hidden {
+  display: none;
+  height: 100%;
+}
+
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 100px);
+  /* base di tutto */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+.main-layout {
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+}
+
+
+/* Fine DEBUG */
