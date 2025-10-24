@@ -17,8 +17,7 @@ function App() {
 
       <Route index element = {<Home />}/>  {/*Lista dei Jobs*/}
       <Route  path="job-list" element = {<JobList />}/>  {/*Dettagli del job*/}
-      <Route  path="job-detail" element = {<JobDetail />}/>  {/*Inizio Layout*/}
-
+      <Route  path="job-detail/:slug" element = {<JobDetail />}/>  {/*Inizio Layout*/}
       </Route> {/*Fine Layout*/}
       
     </Routes>

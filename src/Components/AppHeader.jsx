@@ -9,7 +9,7 @@ export default function AppHeader(){
             <div className="links">
                 <NavLink to= "/">Home</NavLink>
                 <NavLink to= "job-list">Lavori</NavLink>
-                <NavLink to= "job-detail">Dettagli</NavLink>
+                <NavLink to= "job-detail/">Dettagli</NavLink>
             </div>
     </nav>
     )

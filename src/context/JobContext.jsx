@@ -8,6 +8,8 @@ export const JobProvider = ({children}) => {
     const apiUrl = "https://www.arbeitnow.com/api/job-board-api"
 
     const [jobs, setJobs] = useState([])
+    const [selectedJob, setSelectedJob] = useState(null)
+
 
     console.log("diocane sono il context")
 
@@ -21,6 +23,9 @@ export const JobProvider = ({children}) => {
             console.error("Errore durante il recuper dei dati dall'Api", error)
         }
     }
+
+
+    
 
 
     useEffect(() => {
@@ -37,6 +42,9 @@ export const JobProvider = ({children}) => {
             setShowDetails,
             jobs,
             setJobs,
+            apiUrl,
+            selectedJob,
+            setSelectedJob
         }}
         >
             {children}
