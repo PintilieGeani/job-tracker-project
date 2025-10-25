@@ -34,9 +34,6 @@ export default function JobList() {
         <>
             <div className="container">
                 <h1>Sono la lista dei job, Provami Nicole</h1>
-                <h3>
-                    Adesso se tu clicchi su un lavoro ti divide in due lo schermo e ti fa vedere i dettagli di ogni job, se clicchi su un'altro dovrebbe cambiare solo i dettagli ma resti sulla stessa pagina, se clicchi su prova toggle ti chiude nil lato destro o te lo apre a seconda dello stato in cui sei.
-                </h3>
                 <div>
                     <button
                         onClick={provaToggle}

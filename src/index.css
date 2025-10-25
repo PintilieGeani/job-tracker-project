@@ -105,3 +105,17 @@ footer {
 
 
 /* Fine DEBUG */
+
+
+
+/* MEDIA Query */
+
+@media (max-width: 768px){
+  .job-detail{
+    width: 100%
+  }
+
+  .job-list-reduct {
+  display: none;
+}
+}

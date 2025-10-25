@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom"
 
 export default function JobDetail() {
 
-    const { selectedJob, setSelectedJob} = useJobContext()
+    const { selectedJob, setSelectedJob, setShowDetails} = useJobContext()
 
     console.log(selectedJob)
 
@@ -18,6 +18,7 @@ export default function JobDetail() {
                 <h2>{selectedJob.title}</h2>
                 <h3>Company: {selectedJob.company_name}</h3>
                 <div  dangerouslySetInnerHTML={{ __html: selectedJob.description }}></div>
+                <button onClick={() => setShowDetails(false)}>Chiudi</button>
             </div>
             }
         </>
