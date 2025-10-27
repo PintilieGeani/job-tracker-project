@@ -63,18 +63,9 @@ export default function JobList() {
     return (
         <>
             <div className="container">
-                <h1>Sono la lista dei job, Provami Nicole</h1>
-                <div>
-                    <button
-                        onClick={provaToggle}
-                    >
-                        Prova Toggle
-                    </button>
+                <div className="main-logo">
+                <img src="./logo.png" alt="Logo" />
                 </div>
-
-                <h2>Lista dei lavori disponibili</h2>
-
-                <label htmlFor="">Cerca</label>
                 <input
                     type="text"
                     value={query}

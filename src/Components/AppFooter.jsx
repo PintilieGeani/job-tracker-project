@@ -1,7 +1,7 @@
 export default function AppFooter(){
     return(
-    <h1>
-        Sono il Footer
-    </h1>
+    <h3>
+        Created with &hearts; by Pintilie Geani
+    </h3>
     )
 }

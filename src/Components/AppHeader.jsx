@@ -4,7 +4,7 @@ export default function AppHeader(){
     return(
     <nav>
             <div className="logo">
-                <img src="https://placehold.co/100x100?text=LOGO" alt="Logo" />
+                <img src="./logo.png" alt="Logo" />
             </div>
             <div className="links">
                 <NavLink to= "/">Home</NavLink>
