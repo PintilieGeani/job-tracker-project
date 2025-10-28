@@ -91,8 +91,9 @@ nav {
   padding: 10px 5px;
   border-radius: var(--radius);
   transition: all 0.4s ease;
-
+  font-size: small;
 }
+
 
 .links a:hover {
   transform: translateX(7px);
@@ -390,8 +391,14 @@ footer {
 
 
 
+
+
+
+
+
 /* MEDIA Query */
 
+/* MEDIA JOBLIST, JOBDETAIL */
 @media (max-width: 768px) {
   .job-detail {
     width: 100%;
@@ -411,13 +418,20 @@ footer {
   .job-detail.active {
     position: absolute;
     top: 0;
-    left: calc(100px);
+    left: calc(50px);
     height: 100%;
-    width: calc(100% - 100px);
+    width: calc(100% - 50px);
     z-index: 10;
   }
 }
+/* FINE MEDIA JOBLIST, JOBDETAIL */
 
+
+
+
+
+
+/* MEDIA ANIMAZIONI */
 @media (max-width: 768px) {
   @keyframes slideInRight {
     from {
@@ -443,3 +457,20 @@ footer {
     }
   }
 }
+/* FINE MEDIA ANIMAZIONI */
+
+/* MEDIA HEADER */
+@media (max-width: 768px) {
+  header{
+    width: 50px;
+  }
+
+  .links span{
+    display: none;
+  }
+
+  .links a{
+    padding: 40px 0px;
+  }
+}
+/* FINE MEDIA HEADER */
