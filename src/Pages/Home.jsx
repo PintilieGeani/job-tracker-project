@@ -13,10 +13,16 @@ export default function Home() {
 
     return (
         <>
-        <h1>Sono la home page</h1>
-        <h3>
-            Benvenuti nel mio JOB TRACKER 🤍.
-        </h3>
+       <div className="container">
+        <div className="banner">
+            <div className="banner-img">
+            <img src="./logo.png" alt="Logo" />
+            </div>
+            <div className="banner-text">
+                <h1>Benvenuti nel mio JobTracker</h1>
+            </div>
+        </div>
+       </div>
         </>
     )
 }
